@@ -257,7 +257,7 @@ nav ul li a{
     width: 450px;
 }
 
-.project .item img:hover{
+.project.item img:hover{
     transform:scale(1.2);
 }
 .item h3{
