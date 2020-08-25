@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.5;
+    max-width: 80rem;
+    margin: 2rem auto;
+}
+
+main{
+    max-width: 80rem;
+    margin: 2rem auto;
+}
+
+header{
+    background-color: #000000;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    max-width: 50rem;
+    align-content: center;
+    margin: 1rem auto;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none !important;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.active{
+    color:orange;
+    border-bottom: 1px solid orange;
+}
+
+#home{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.home .profile-img{
+    align-self: baseline;
+}
+
+#home .profile-img img{
+    width: 18rem;
+    padding-top: 10%;
+}
+
+#home .text-content{
+    padding-top: 10%;
+    margin-top: 5%;
+}
+#home .text-content span{
+    background-color: orange;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    margin-bottom: 2.5rem;
+}
+
+#home h1 {
+    font-size: 4rem;
+    margin: 1rem auto;
+}
+
+#home h2 {
+    font-size: 2rem;
+    margin: 1rem auto;
+}
+
+#home p {
+    font-size: 1.25rem;
+    margin: 0.5rem auto;
+}
+
+.about{
+    display: flex;
+    margin: auto 2rem;
+    justify-content: space-around!important;
+    align-items: flex-end;
+}
+
+#about .about-img img {
+    text-align: left;
+}
+
+#about .about-img {
+    width: 60%; 
+    text-align: left;
+}
+
+#about .about-text{
+    margin: 2rem auto;
+}
+
+#about h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#about p {
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: justify
+    justify-content:end;
+}
+
+#about span {
+    border: 1px solid orange;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0.5rem;
+}
+
+/* #about a {
+    margin-top: 1.5rem;
+    display: inline-block;
+    background-color:orange;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    width: 13rem;
+    margin: 2rem;
+} */
+
+.skill h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.skill .cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill .cards .card{
+    background-color: #202026;
+    box-shadow: 1rem 0 3rem #000000;
+    padding: 20px;
+    width: 30vw;
+    margin: 1rem;
+}
+
+.skill .cards .card img{
+    width: 30px;
+}
+
+.skill .cards .card h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.education h1{
+    margin: 2rem auto;
+    font-size: 3rem;
+    text-align:center;
+}
+
+.education .card{
+    background-color: #202026;
+    box-shadow: 1rem 0 3rem #000000;
+    padding: 20px;
+    width: 30vw;
+    margin: 1rem auto;
+}
+
+.education .college{
+    display: flex;
+    justify-content: space-around;
+}
+
+.education h2{
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+}
+
+.education #project h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem auto;
+}
+
+.education .project{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.education .project img{
+    width: 30vw;
+}
+
+.project .item{
+    text-align: center;
+    padding: 20px;
+}
+
+.project .item img{
+    height: 250px;
+    width: 450px;
+}
+.item h3{
+    font-size: 2rem;
+}
+
+.project .item a{
+    display: inline-block;
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    width: 10rem;
+    margin: 1rem 2rem;
+}
+
+#contact h1 {
+    font-size: 3rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#contact .parts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact .card {
+    background-color: #202026;
+    box-shadow: 1rem 0 3rem #000;
+    padding: 20px;
+    width: 35vw;
+    margin: 2rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-content: center;
+}
+
+#contact i {
+    font-size: 2rem;
+    align-self: center;
+    margin: auto 1.5rem auto 0.5rem;
+    width: 2rem;
+    text-align: center;
+}
+
+#contact span {
+    align-self: center;
+}
+
+#contact h2 {
+    font-size: 1.35rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: space-around;
+}
+
+#contact input,
+#contact button {
+    height: 50px;
+    background: transparent;
+    width: 35vw;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: orange
+    font-size: 1.25rem;
+    border-radius: 25px;
+}
+
+#contact textarea {
+    background: transparent;
+    width: 35vw;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
