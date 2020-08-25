@@ -167,7 +167,7 @@ nav ul li a{
     margin-left: 2rem;
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    text-align: justify
+    text-align: justify;
     justify-content:end;
 }
 
@@ -339,7 +339,7 @@ nav ul li a{
 }
 
 #contact button {
-    background-color: orange
+    background-color: orange;
     font-size: 1.25rem;
     border-radius: 25px;
 }
