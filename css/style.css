@@ -179,22 +179,6 @@ nav ul li a{
     margin: 0.5rem;
 }
 
-/* #about a {
-    margin-top: 1.5rem;
-    display: inline-block;
-    background-color:orange;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    text-decoration: none;
-    padding: 0.25rem 0.75rem;
-    width: 13rem;
-    margin: 2rem;
-} */
-
 .skill h1{
     font-size: 3rem;
     text-align: center;
@@ -271,6 +255,10 @@ nav ul li a{
 .project .item img{
     height: 250px;
     width: 450px;
+}
+
+.project .item img:hover{
+    transform:scale(1.2)
 }
 .item h3{
     font-size: 2rem;
