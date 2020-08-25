@@ -88,6 +88,11 @@ nav ul li a{
     font-size: 1.5rem;
 }
 
+#toggle,header label {
+    display: none;
+}
+  
+
 .active{
     color:orange;
     border-bottom: 1px solid orange;
@@ -238,13 +243,10 @@ nav ul li a{
 }
 
 .education .project{
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-}
-
-.education .project img{
-    width: 30vw;
 }
 
 .project .item{
@@ -255,6 +257,7 @@ nav ul li a{
 .project .item img{
     height: 250px;
     width: 450px;
+    /* width: 30vh; */
 }
 
 .project.item img:hover{
@@ -361,3 +364,152 @@ nav ul li a{
     color: #ffffff;
 }
 
+@media(max-width:768px){
+
+    #toggle,header label {
+    display: none;
+}
+    .project{
+        display:flex;
+        align-content: center;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .project .item{
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:426px){
+
+    #toggle {
+        display: none;
+    }
+
+    #toggle:checked~nav {
+        display: block;
+    }
+
+    header label {
+        font-size: 2.25rem;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+     #home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+
+    #home .profile-img {
+        justify-content: center !important;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem !important;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #about a {
+        display: block;
+        margin: 2rem auto;
+    }
+
+    #about h1,
+    #about .about-img,
+    #about a {
+        text-align: center;
+    }
+
+    #about .about-text {
+        margin: auto 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .skill .cards {
+        flex-direction: column;
+    }
+
+    .skill .cards .card {
+        width: 60vw !important;
+        margin: 2rem auto;
+    }
+
+    .education .card{
+        padding: 20px;
+        width: 60vw !important;
+        margin: 2rem auto;
+    }
+
+    .education .college {
+        flex-direction: column;
+    }
+
+    .project .item {
+        display: flex;
+        flex-direction: column;
+    }
+    .project .item img {
+        width: 60vw !important;
+        margin: 1rem auto;
+    }
+
+    #contact .parts {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    #contact .parts .left .card,
+    #contact .parts .right form input,
+    #contact .parts .right form button,
+    #contact .parts .right form textarea {
+        width: 60vw;
+    }
+  h1 {
+        font-size: 2rem !important;
+    }
+
+    .portfolio .item img {
+        width: 80vw;
+        margin: 1rem;
+    }
+
+    #contact .parts .left p {
+        font-size: 1rem;
+    }
+
+    header label {
+        font-size: 2.25rem;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+
+    header nav {
+        display: none;
+    }
+}
